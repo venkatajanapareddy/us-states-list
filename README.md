@@ -93,7 +93,7 @@ getAbbreviationByName('California'); // 'CA'
 
 ## License
 
-MIT © us-states-list Contributors
+MIT
 
 ## Contributing
 
