@@ -35,7 +35,8 @@
     "lint": "eslint . --ext .ts",
     "format": "prettier --write .",
     "format:check": "prettier --check .",
-    "prepare": "npm run build"
+    "prepare": "husky",
+    "postinstall": "husky install"
   },
   "keywords": [
     "us states",
@@ -60,9 +61,14 @@
     "eslint": "^8.0.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-import": "^2.29.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^15.5.2",
     "prettier": "^3.0.0",
     "tsup": "^7.0.0",
     "typescript": "^5.0.0",
     "vitest": "^1.0.0"
+  },
+  "lint-staged": {
+    "*.{js,ts,json,md}": "prettier --write"
   }
 }
