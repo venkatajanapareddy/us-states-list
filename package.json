@@ -1,0 +1,68 @@
+{
+  "name": "us-states-list",
+  "version": "0.1.0",
+  "description": "A clean, typed, and comprehensive list of all U.S. states and territories with full metadata.",
+  "type": "module",
+  "author": "Venkata Phanindra Kumar Janapareddy",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/venkatajanapareddy/us-states-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/venkatajanapareddy/us-states-list/issues"
+  },
+  "homepage": "https://github.com/venkatajanapareddy/us-states-list#readme",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.cjs",
+      "types": "./dist/index.d.ts"
+    },
+    "./us-data.json": "./dist/us-data.json"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "vitest watch",
+    "build": "tsup",
+    "test": "vitest run",
+    "test:coverage": "vitest run --coverage",
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "us states",
+    "united states",
+    "state list",
+    "territories",
+    "postal codes",
+    "address",
+    "forms",
+    "location",
+    "geography",
+    "civic tech",
+    "FIPS",
+    "typescript",
+    "dataset"
+  ],
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.18.0",
+    "@typescript-eslint/parser": "^6.18.0",
+    "@vitest/coverage-v8": "^1.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^9.0.0",
+    "eslint-plugin-import": "^2.29.0",
+    "prettier": "^3.0.0",
+    "tsup": "^7.0.0",
+    "typescript": "^5.0.0",
+    "vitest": "^1.0.0"
+  }
+}
